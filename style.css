@@ -1,0 +1,46 @@
+:root{
+    --form-height: 200px;
+    --button-height: 50px;
+}
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+main {
+    width: 100vw;
+    min-height: 100vh;
+    height: fit-content;
+    background:
+                radial-gradient(farthest-corner at 40px 40px, #ff4e50 10%, transparent),
+                radial-gradient(ellipse at bottom, #f9d423 10%, transparent);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    width:40%;
+    min-width: fit-content;
+    height: var(--form-height);
+    min-height: fit-content;
+    background-color: #fff;
+    padding: 20px 100px;
+    border-radius: calc(var(--form-height)/2);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.button {
+    width: 200px;
+    height: var(--button-height);
+    border-radius: calc(var(--button-height)/2);
+    transition: 0.3s;
+}
